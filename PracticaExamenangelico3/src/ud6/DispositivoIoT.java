@@ -1,0 +1,15 @@
+package ud6;
+
+abstract class DispositivoIoT {
+protected String id;
+protected double consumoBase;
+protected RedIoT red;
+private static int contadorTotal = 0;
+public DispositivoIoT(String id, RedIoT red, double consumoBase) {
+this.id = id;
+this.red = red;
+this.consumoBase = consumoBase;
+contadorTotal++;
+}
+
+}
